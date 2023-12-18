@@ -141,7 +141,10 @@ address {
 /* Footer*/
 .footer {
     background: var(--NAVY-BLUE, #2E2F42);
-}
+     width: 1440px;
+     height: 312px;
+    flex-shrink: 0;
+        }
 .footer-logo {
 color: var(--IRIS, #4D5AE5);
     font-family: 'Raleway', sans-serif;
