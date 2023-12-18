@@ -50,6 +50,11 @@ img {
 }
 
 /* Header */
+.header {
+    display: inline-flex;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
 .logo {
 color: var(--IRIS, #4D5AE5);
 font-family: 'Raleway', sans-serif;
@@ -58,6 +63,13 @@ font-family: 'Raleway', sans-serif;
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    display: inline-flex;
+    box-sizing: border-box;
+    height: 24px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 24px 0;
 }
 .logo-studio {
     font-family: 'Raleway', sans-serif;
@@ -76,12 +88,20 @@ a {
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.32px;
+        box-sizing: border-box;
+        display: inline-flex;
+        justify-content: flex-start;
+        gap: 40px;
+        padding: 24px 0;
 }
 .contact-link-item {
     color: #434455;
     font-style: normal;
         line-height: 1.5;
         letter-spacing: 0.32px;
+        padding: 24px 0;
+        display: inline-flex;
+        justify-content: flex-end;
 }
 .contact-link-item:hover,
 .contact-link-item:focus {
