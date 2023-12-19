@@ -51,7 +51,7 @@ img {
 
 /* Header */
 .header {
-    display: inline-flex;
+    display: flex;
     box-sizing: border-box;
     flex-shrink: 0;
 }
