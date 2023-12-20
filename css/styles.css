@@ -27,6 +27,7 @@ ol {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 section {
     min-height: 100vh;
@@ -89,7 +90,6 @@ a {
 .nav-list {
     display: flex;
     gap: 40px;
-    width: calc( (261 - 2 * 24) / 3);
 }
 .nav-link {
     display: flex;
@@ -116,7 +116,6 @@ a {
     display: flex;
     gap: 40px;
     justify-content: flex-end;
-    width: calc( (340 - 1 * 24) / 2);
 }
 .contact-list:last-child {
     margin-right: 0;
@@ -134,19 +133,21 @@ a {
         color: var(--OCEAN, #404BBF);
 }
 /* Main */
+/* Section 1 */
 .hero {
     background-color: var(--NAVY-BLUE, #2E2F42);
     display: flex;
-    justify-content: center;
-        height: 600px;
-        flex-shrink: 0;
+    height: 600px;
+    flex-shrink: 0;
+    padding: 188px 0;
 }
 .hero-heading {
-    color: var(--WHITE, #FFF);
-        text-align: center;
-            font-size: 56px;
-            line-height: 1.07;
-            letter-spacing: 1.12px;
+    color: var(--WHITE, #FFF); 
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+    margin-bottom: 48px;
 }
 .hero-button {
     cursor: pointer;
@@ -158,6 +159,11 @@ a {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.64px;
+    display: flex;
+    padding: 16px 32px;
+    height: 56px;
+    min-width: 169px;
+    border: none;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -174,6 +180,20 @@ p {
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
+/* Section 2 */
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+.features-item {
+width: calc((100% - 72) / 4);
+}
+.features-subtitle {
+    margin-bottom: 8px;
+}
+
+
+/* Section 3 */
 .our-team {
     background-color: var(--CLOUD, #F4F4FD);
 }
