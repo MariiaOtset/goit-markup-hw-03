@@ -34,7 +34,6 @@ section {
     padding-bottom: 120px;
 }
 .visually-hidden {
-    visibility: hidden;
     position: absolute;
     width: 1px;
     height: 1px;
