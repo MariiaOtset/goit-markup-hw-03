@@ -45,18 +45,21 @@ section {
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;
 }
 /* Container */
 .container {
-    display: flex;
-    width: 1158px;
+width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
     min-height: 100%;
 }
 
 /* Header */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .header {
     display: flex;
     box-sizing: border-box;
@@ -139,7 +142,6 @@ address {
 /* Section 1 */
 .hero {
     background-color: var(--NAVY-BLUE, #2E2F42);
-    display: flex;
     height: 600px;
     flex-shrink: 0;
     padding: 188px 0;
@@ -151,6 +153,11 @@ address {
     letter-spacing: 1.12px;
     max-width: 496px;
     margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-button {
     cursor: pointer;
@@ -167,6 +174,8 @@ address {
     height: 56px;
     min-width: 169px;
     border: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -289,4 +298,11 @@ color: var(--IRIS, #4D5AE5);
     color: var(--CLOUD, #F4F4FD);
         line-height: 1.5;
         letter-spacing: 0.32px;
+        width: 264px;
+}
+
+
+/* Modal window */
+input {
+    font-family: inherit;
 }
